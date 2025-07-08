@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "2168bb40-dbab-4b14-86c9-befe85af39dc",
+		"name": "webhook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21312339",
+		"_collection_link": "https://orange-firefly-170286.postman.co/workspace/Team-Workspace~9900a86b-eef2-4f39-821b-0541ca24ab82/collection/21312339-2168bb40-dbab-4b14-86c9-befe85af39dc?action=share&source=collection_link&creator=21312339"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"schoolName\": \"Kohli School\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3100/registerSchool",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"registerSchool"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3100/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4100/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4100",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"schoolId\": 1,\r\n    \"eventName\": \"newStudentAdd\",\r\n    \"endpointUrl\": \"http://localhost:4100/webhook/studentAdded\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3100/addWebhookEvent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"addWebhookEvent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Roland\",\r\n            \"age\":22,\r\n            \"schoolId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3100/addStudent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"addStudent"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
